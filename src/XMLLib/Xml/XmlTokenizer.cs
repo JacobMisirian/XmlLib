@@ -43,6 +43,12 @@ namespace XMLLib
                             data.Append((char)readChar());
                         data.Append((char)readChar());
                         break;
+                    case '\'':
+                        data.Append((char)readChar());
+                        while ((char)peekChar() != '\'')
+                            data.Append((char)readChar());
+                        data.Append((char)readChar());
+                        break;
                     default:
                         data.Append((char)readChar());
                         break;

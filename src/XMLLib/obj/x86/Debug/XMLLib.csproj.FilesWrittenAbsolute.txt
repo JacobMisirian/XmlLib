@@ -4,3 +4,8 @@
 /home/reagan/XMLLib/XMLLib/obj/x86/Debug/XMLLib.exe
 /home/reagan/XMLLib/XMLLib/obj/x86/Debug/XMLLib.exe.mdb
 /home/reagan/XMLLib/XMLLib/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/reagan/XmlLib/src/XMLLib/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/reagan/XmlLib/src/XMLLib/bin/Debug/XMLLib.exe.mdb
+/home/reagan/XmlLib/src/XMLLib/bin/Debug/XMLLib.exe
+/home/reagan/XmlLib/src/XMLLib/obj/x86/Debug/XMLLib.exe
+/home/reagan/XmlLib/src/XMLLib/obj/x86/Debug/XMLLib.exe.mdb

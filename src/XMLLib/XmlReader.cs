@@ -22,7 +22,7 @@ namespace XMLLib
                 if (element is XmlTagEnd)
                     tabIndent--;
                 for (int i = 0; i < tabIndent; i++)
-                    writer.Write("\t");
+                    writer.Write("    ");
                 if (element is XmlTag)
                     tabIndent++;
                 writer.WriteLine(element.Serialize());
