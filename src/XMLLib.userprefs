@@ -1,0 +1,26 @@
+﻿<Properties StartupItem="XMLLib/XMLLib.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XMLLib/XmlReader.cs">
+    <Files>
+      <File FileName="XMLLib/XmlReader.cs" Line="24" Column="41" />
+      <File FileName="XMLLib/XmlWriter.cs" Line="57" Column="35" />
+      <File FileName="XMLLib/Program.cs" Line="28" Column="41" />
+      <File FileName="XMLLib/Xml/XmlTokenizer.cs" Line="10" Column="30" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="XMLLib" expanded="True">
+            <Node name="XMLLib" expanded="True">
+              <Node name="XmlReader.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
