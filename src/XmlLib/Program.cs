@@ -9,12 +9,16 @@ namespace XmlLib
     {
         public static void Main(string[] args)
         {
+            /*
             XmlTag html = new XmlTag("html");
             html.AddTag("head").AddTag("title").AddData("Hello, World!");
             XmlTag body = html.AddTag("body");
             body.AddTag("h1").AddTag("a", "href", "http://yahoo.com", XmlAttributeType.String).AddData("CLICK ME!");
 
             File.WriteAllText(args[0], html.Serialize(0));
+            */
+
+            File.WriteAllText(args[1], new XmlParser().ParseXmlList(new XmlTokenizer().Scan(File.ReadAllText(args[0]))).Serialize(0));
         }
     }
 }

@@ -41,6 +41,8 @@
     <Compile Include="XmlTags\XmlTag.cs" />
     <Compile Include="XmlTags\XmlRawData.cs" />
     <Compile Include="XmlParser.cs" />
+    <Compile Include="XmlTokenizer.cs" />
+    <Compile Include="XmlTags\XmlClosingTag.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

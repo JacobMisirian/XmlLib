@@ -9,6 +9,12 @@ namespace XmlLib.XmlTags
         public string Value { get; set; }
         public XmlAttributeType XmlAttributeType { get; set; }
 
+        public XmlAttribute(string name)
+        {
+            Name = name;
+            Value = string.Empty;
+            XmlAttributeType = XmlAttributeType.Raw;
+        }
         public XmlAttribute(string name, string value, XmlAttributeType attributeType)
         {
             Name = name;

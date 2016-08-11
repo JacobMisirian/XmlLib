@@ -8,43 +8,27 @@ namespace XmlLib
 {
     public class XmlParser
     {
-        private string source;
-        private int position;
-
-        public XmlTag Parse(string source)
+        public XmlTag ParseXmlList(List<ISerializable> xmlList)
         {
-            this.source = source;
-            this.position = 0;
+            XmlTag result = xmlList[0] as XmlTag;
+            Stack<int> openingIndexes = new Stack<int>();
+            openingIndexes.Push(0);
 
-            whiteSpace();
-            while (peekChar() != -1)
+            for (int i = 1; i < xmlList.Count; i++)
             {
-                if ((char)peekChar() == '<')
+                ISerializable current = xmlList[i];
+
+                if (current is XmlTag)
                 {
-                    readChar();
-                    whiteSpace();
-                    StringBuilder sb = new StringBuilder();
-                    while ((char)peekChar() != '>')
-                    {
-                        sb.Append((char)readChar());
-                    }
+                    ((XmlTag)xmlList[openingIndexes.Peek()]).AddTag(current as XmlTag);
+                    openingIndexes.Push(i); 
                 }
+                else if (current is XmlClosingTag)
+                    openingIndexes.Pop();
+                else if (current is XmlRawData)
+                    ((XmlTag)xmlList[openingIndexes.Peek()]).AddData(current as XmlRawData);
             }
-        }
-
-        private void whiteSpace()
-        {
-            while (char.IsWhiteSpace((char)peekChar()))
-                readChar();
-        }
-
-        private int peekChar(int n = 0)
-        {
-            return position + n < source.Length ? source[position + n] : -1;
-        }
-        private int readChar()
-        {
-            return position < source.Length ? source[position++] : -1;
+            return result;
         }
     }
 }
