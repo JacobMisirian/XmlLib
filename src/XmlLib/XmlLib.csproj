@@ -3,10 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{81F27676-C1F1-4571-9D0A-9A7B69861269}</ProjectGuid>
+    <ProjectGuid>{A458C8C7-C0D8-4828-A1B3-B9D950E837C9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>XMLLib</RootNamespace>
-    <AssemblyName>XMLLib</AssemblyName>
+    <RootNamespace>XmlLib</RootNamespace>
+    <AssemblyName>XmlLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,18 +35,15 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Xml\XmlTag.cs" />
-    <Compile Include="Xml\XmlTagAttribute.cs" />
-    <Compile Include="Xml\XmlTagAttributeType.cs" />
-    <Compile Include="Xml\XmlTagEnd.cs" />
-    <Compile Include="Xml\XmlDataType.cs" />
-    <Compile Include="Xml\XmlRawData.cs" />
-    <Compile Include="XmlWriter.cs" />
-    <Compile Include="XmlReader.cs" />
-    <Compile Include="Xml\XmlTokenizer.cs" />
+    <Compile Include="XmlTags\XmlAttributeType.cs" />
+    <Compile Include="XmlTags\XmlAttribute.cs" />
+    <Compile Include="XmlTags\ISerializable.cs" />
+    <Compile Include="XmlTags\XmlTag.cs" />
+    <Compile Include="XmlTags\XmlRawData.cs" />
+    <Compile Include="XmlParser.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Xml\" />
+    <Folder Include="XmlTags\" />
   </ItemGroup>
 </Project>

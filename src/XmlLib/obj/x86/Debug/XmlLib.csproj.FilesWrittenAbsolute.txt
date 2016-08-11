@@ -1,0 +1,5 @@
+/home/reagan/XmlLib/src/XmlLib/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/reagan/XmlLib/src/XmlLib/bin/Debug/XmlLib.exe.mdb
+/home/reagan/XmlLib/src/XmlLib/bin/Debug/XmlLib.exe
+/home/reagan/XmlLib/src/XmlLib/obj/x86/Debug/XmlLib.exe
+/home/reagan/XmlLib/src/XmlLib/obj/x86/Debug/XmlLib.exe.mdb

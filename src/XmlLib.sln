@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlLib", "XmlLib\XmlLib.csproj", "{A458C8C7-C0D8-4828-A1B3-B9D950E837C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A458C8C7-C0D8-4828-A1B3-B9D950E837C9}.Debug|x86.ActiveCfg = Debug|x86
+		{A458C8C7-C0D8-4828-A1B3-B9D950E837C9}.Debug|x86.Build.0 = Debug|x86
+		{A458C8C7-C0D8-4828-A1B3-B9D950E837C9}.Release|x86.ActiveCfg = Release|x86
+		{A458C8C7-C0D8-4828-A1B3-B9D950E837C9}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
