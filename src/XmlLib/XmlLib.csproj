@@ -43,6 +43,7 @@
     <Compile Include="XmlParser.cs" />
     <Compile Include="XmlTokenizer.cs" />
     <Compile Include="XmlTags\XmlClosingTag.cs" />
+    <Compile Include="XmlTags\AttributeNotFoundException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

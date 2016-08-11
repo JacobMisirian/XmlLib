@@ -29,6 +29,16 @@ namespace XmlLib.XmlTags
             Name = name;
         }
 
+        public XmlAttribute AddAttribute(XmlAttribute attribute)
+        {
+            Attributes.Add(attribute);
+            return attribute;
+        }
+        public XmlAttribute AddAttribute(string attributeName, string attributeValue, XmlAttributeType attributeType)
+        {
+            return AddAttribute(new XmlAttribute(attributeName, attributeValue, attributeType));
+        }
+
         public XmlRawData AddData(XmlRawData data)
         {
             ChildTags.Add(data);
@@ -55,6 +65,37 @@ namespace XmlLib.XmlTags
         public XmlTag AddTag(string name, string attributeName, string attributeValue, XmlAttributeType attributeType)
         {
             return AddTag(new XmlTag(name, attributeName, attributeValue, attributeType));
+        }
+
+        public XmlAttribute SetAttributeName(string origName, string newName)
+        {
+            foreach (var attribute in Attributes)
+                if (attribute.Name == origName)
+                {
+                    attribute.Name = newName;
+                    return attribute;
+                }
+            throw new AttributeNotFoundException(origName, this);
+        }
+        public XmlAttribute SetAttributeType(string attributeName, XmlAttributeType attributeType)
+        {
+            foreach (var attribute in Attributes)
+                if (attribute.Name == attributeName)
+                {
+                    attribute.XmlAttributeType = attributeType;
+                    return attribute;
+                }
+            throw new AttributeNotFoundException(attributeName, this);
+        }
+        public XmlAttribute SetAttributeValue(string attributeName, string newValue)
+        {
+            foreach (var attribute in Attributes)
+                if (attribute.Name == attributeName)
+                {
+                    attribute.Value = newValue;
+                    return attribute;
+                }
+            throw new AttributeNotFoundException(attributeName, this);
         }
 
         public string Serialize(int indent)
