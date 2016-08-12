@@ -6,8 +6,16 @@ using XmlLib.XmlTags;
 
 namespace XmlLib
 {
+    /// <summary>
+    /// Xml parser.
+    /// </summary>
     public class XmlParser
     {
+        /// <summary>
+        /// Parses the xml list.
+        /// </summary>
+        /// <returns>The xml list.</returns>
+        /// <param name="xmlList">Xml list.</param>
         public XmlTag ParseXmlList(List<ISerializable> xmlList)
         {
             XmlTag result = xmlList[0] as XmlTag;

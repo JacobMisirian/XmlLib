@@ -6,12 +6,18 @@ using XmlLib.XmlTags;
 
 namespace XmlLib
 {
+    /// <summary>
+    /// Xml tokenizer.
+    /// </summary>
     public class XmlTokenizer
     {
         private string source;
         private int position;
         private List<ISerializable> result;
-
+        /// <summary>
+        /// Scan the specified source.
+        /// </summary>
+        /// <param name="source">Source.</param>
         public List<ISerializable> Scan(string source)
         {
             position = 0;
